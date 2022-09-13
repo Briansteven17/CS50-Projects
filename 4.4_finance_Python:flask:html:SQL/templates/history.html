@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<div align="center">
+    <table class="table-stock">
+        <tbody>
+            <thead>
+                <tr>
+                    <td>ORDER NUMBER</td>
+                    <td>DATETIME</td>
+                    <td>STOCK</td>
+                    <td>COMPANY</td>
+                    <td>NUMBER OF SHARES</td>
+                    <td>TYPE OF TRANSACTION</td>
+                    <td>PRICE</td>
+                    <td>TOTAL TRANSACTION</td>
+                </tr>
+            </thead>
+            {% for data in user_data %}
+                <tr>
+                    <td>{{ data.orderid }}</td>
+                    <td>{{ data.date }}</td>
+                    <td>{{ data.symbol }}</td>
+                    <td>{{ data.company }} </td>
+                    <td>{{ data.shares }}</td>
+                    <td>{{ data.type }}</td>
+                    <td>{{ data.price }} </td>
+                    <td>{{ data.total }} </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+{% endblock %}

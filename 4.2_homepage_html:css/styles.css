@@ -1,0 +1,66 @@
+.img-long{
+    width:100%;
+    height:auto;
+}
+
+.img-text1{
+    color : Navy;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: right;
+}
+
+.img-text2{
+    color : Navy;
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    text-align: right;
+}
+
+.img-rect{
+    height: 100px;
+    width: 400px;
+    background-color: #ffffff;
+    border: 100px;
+    box-shadow: 10px 10px 5px lightblue;
+  }
+
+.text-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 120px;
+    margin-left: 800px;
+}
+
+.underline {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+  }
+
+.line {
+    stroke:rgb(0, 51, 153);
+    stroke-width:10;
+}
+
+.line:hover {
+    stroke:rgb(242, 242, 242);
+}
+
+.display-text svg{
+    box-shadow: rgb(51, 165, 255) 0px 20px 30px -10px;
+}
+
+.display-text {
+    height:25px;
+    width: 65%;
+    overflow:hidden;
+
+    transition:all 300ms;
+}
+
+.display-text:hover {
+    height:140px;
+}
+

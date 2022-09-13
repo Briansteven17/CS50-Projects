@@ -1,0 +1,12 @@
+sort1 uses: Bubble sort
+
+How do you know?: for sorted50000 it takes less than sort 2 and sort 3
+
+sort2 uses: Merge sort
+
+How do you know?: it is the only one that takes more time in the majority of cases compared with sort1 and sort3 which means upper and lower bound take the same time.
+
+sort3 uses: Selection sort
+
+How do you know?: sorted100000 takes 0.001s which is less time than sort2 which means it is the "Ω(2)" for sorting data that is alredy sorted.
+

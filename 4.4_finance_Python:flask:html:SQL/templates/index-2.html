@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <div align="center">
+        <table class="table-stock">
+            <tbody>
+                <thead>
+                    <tr>
+                        <td>STOCK</td>
+                        <td>NUMBER OF SHARES</td>
+                        <td>CURRENT PRICE</td>
+                        <td>TOTAL VALUE</td>
+                        </tr>
+                </thead>
+                {% for stock in data %}
+                    <tr>
+                        <td>{{ stock.symbol }}</td>
+                        <td>{{ stock.share }}</td>
+                        <td>{{ stock.price }}</td>
+                        <td>{{ stock.total }} </td>
+                    </tr>
+                {% endfor %}
+                <tr>
+                    <td colspan="3">CASH BALANCE</td>
+                    <td>{{ cash }}</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">TOTAL BALANCE</td>
+                    <td>{{ net_worth }}</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+{% endblock %}
